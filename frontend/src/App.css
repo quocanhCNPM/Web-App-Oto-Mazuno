@@ -1,0 +1,104 @@
+.customShadow{
+    box-shadow: 10px 10px 10px rgba(10,10,10,10.1);
+}
+.customShadown{
+    box-shadow: 10px 1px 10px rgba(10,10,10,10.1);
+}
+.customShadowm{
+    box-shadow: 10px 10px 10px rgba(10,10,10,10.1);
+}
+/***user table***/
+.userTable{
+    @apply bg-white 
+}
+.userTable th{
+    @apply border text-base font-medium 
+}
+
+.userTable td{
+    @apply border text-base text-center
+}
+
+h1{
+    margin: 40px;
+    color: black;
+    text-shadow: 0 1px 0 green;
+    font-size: 15px;
+    display: flex;
+}
+h3::after{
+    content: 'Lamborghini';
+    animation: animate 23s infinite;
+    color: rgb(246, 246, 246);
+    /* box-shadow: 10px 10px 10px rgba(10,10,10,10.1); */
+}
+
+@keyframes animate {
+      7% {content: '- Lamborghini';}
+      14% {content: '- Bugatti';}
+      21% {content: '- Pagani';}
+    
+      28% {content: '- Ferrari';}
+      35% {content: "- Rolls-Royce";}
+    
+   
+      43% {content: "- Lamborghini";}
+    
+     
+      50% {content:  "- Mercedes-Benz";}
+    
+      57% {content: "- Toyota";}
+    65%{content:  "- Vinfast";}
+  
+   72% {content:  "- Kia";}
+  
+   79% {content:  "- Nissan";}
+   86% {content:  "- Land Rover";}
+   100% {content:  "- Subaru";}
+}
+.img{
+    width: 100px;
+    height: 50px;
+ 
+    object-fit: fill;
+    
+}
+/**scrollbar hidden****/
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+/* .vv-10 {
+    padding-right: 60px;
+} */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* Đảm bảo header ở trên cùng */
+}
+
+.scrollable-content {
+    margin-top: 50px; /* Đảm bảo phần CategoryList không bị che phủ bởi header */
+    overflow-y: scroll; /* Cho phép cuộn nếu nội dung vượt quá kích thước */
+}
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 80px;
+    background-color: #333;
+    /* color: #897f7f; */
+    padding: 10px 0;
+    z-index: 1000; /* Đảm bảo header hiển thị trên cùng */
+}
+
+body {
+    padding-top: 10px; /* Để tránh nội dung bị che bởi header */
+}
+.leftright {
+    position: fixed;
+}
